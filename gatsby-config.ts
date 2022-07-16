@@ -17,6 +17,14 @@ const config: GatsbyConfig = {
         trackingId: "G-F6E5XCFGHW",
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: "vws1fbq",
+        },
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
