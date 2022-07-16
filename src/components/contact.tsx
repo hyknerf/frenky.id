@@ -3,7 +3,7 @@ import * as React from "react";
 const Contact = () => {
   return (
     <section className="flex flex-col justify-center pb-20">
-      <h2 className="text-2xl font-extrabold font-['paralucent'] before:content-['04.'] before:font-mono before:mr-2 text-gray-300 before:text-sun-500 before:text-xl text-center text-sun before:bottom-2">
+      <h2 className="text-3xl font-extrabold font-['paralucent'] before:content-['04.'] before:font-mono before:mr-2 text-gray-300 before:text-sun-500 before:text-2xl text-center text-sun before:bottom-2">
         Connect With Me
       </h2>
       <p className="my-6 leading-relaxed text-center text-gray-300 text-md 2xl:px-64">
@@ -18,7 +18,7 @@ const Contact = () => {
           href={"mailto:hello@frenky.id"}
         >
           <span className="font-mono text-xl group-hover:transition-all text-sun-500 group-hover:font-bold ">
-            Say Hello
+            👋 Say Hello
           </span>
         </a>
       </div>

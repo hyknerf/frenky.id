@@ -1,3 +1,11 @@
+import { faCentercode, faMicroblog } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCode,
+  faMicrochip,
+  faScrewdriver,
+  faScrewdriverWrench,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as React from "react";
 import { Experience } from "../../types";
 import Tags from "../tag";
@@ -23,30 +31,50 @@ const Experiences = (props: ExperiencesProp) => {
           start={item.duration.start}
           end={item.duration.end}
         ></Duration>
-        {item.languages.length > 0 && (
-          <div className="flex">
-            Languages: <Tags texts={item.languages}></Tags>
+        <p className="max-w-2xl">
+          Sed imperdiet faucibus pretium. Nam porttitor purus volutpat odio
+          ornare rutrum ut eu arcu. Aliquam malesuada nulla sed quam hendrerit,
+          id tempor magna fringilla.
+        </p>
+        <div className="flex flex-col mt-4 gap-y-4">
+          {item.languages.length > 0 && (
+            <div className="">
+              <p className="mb-2 font-mono text-sm">
+                <FontAwesomeIcon icon={faCode}></FontAwesomeIcon>
+                <span className="ml-2">Languages</span>
+              </p>
+              <Tags texts={item.languages}></Tags>
+            </div>
+          )}
+          <div className="">
+            <p className="mb-2 font-mono text-sm">
+              <FontAwesomeIcon icon={faMicrochip}></FontAwesomeIcon>
+              <span className="ml-2">Technologies</span>
+            </p>
+            <Tags texts={item.technologies}></Tags>
           </div>
-        )}
-        <div className="flex">
-          Technologies: <Tags texts={item.technologies}></Tags>
+          {item.tools.length > 0 && (
+            <div className="">
+              <p className="mb-2 font-mono text-sm">
+                <FontAwesomeIcon icon={faScrewdriverWrench}></FontAwesomeIcon>
+                <span className="ml-2">Tools</span>
+              </p>
+              <Tags texts={item.tools}></Tags>
+            </div>
+          )}
         </div>
-        {item.tools.length > 0 && (
-          <div className="flex">
-            Tools:
-            <Tags texts={item.tools}></Tags>
-          </div>
-        )}
       </div>
     );
   });
 
   return (
-    <section className="2xl:mx-20">
-      <h2 className="text-2xl font-extrabold font-['paralucent'] before:content-['02.'] before:font-mono before:mr-2 text-gray-300 before:text-sun-500 before:text-xl text-sun before:bottom-2">
+    <section className="mb-20 2xl:mx-20">
+      <h2 className="text-3xl font-extrabold font-['paralucent'] before:content-['02.'] before:font-mono before:mr-2 text-gray-300 before:text-sun-500 before:text-2xl text-sun">
         I've Been Working With
       </h2>
-      <div className="flex flex-col gap-6 pt-4 pb-20 text-gray-300 first:-mt-4">{experiences}</div>
+      <div className="flex flex-col gap-12 pt-4 pb-20 text-gray-300 first:-mt-4">
+        {experiences}
+      </div>
     </section>
   );
 };

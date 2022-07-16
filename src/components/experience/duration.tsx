@@ -3,9 +3,9 @@ import { WorkDuration } from "../../types";
 
 const Duration = (props: WorkDuration) => {
   return (
-    <>
-      {props.start}-{props.end}
-    </>
+    <div className="mb-4">
+      {props.start} — {props.end}
+    </div>
   );
 };
 
