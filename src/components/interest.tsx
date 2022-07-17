@@ -1,5 +1,4 @@
 import * as React from "react";
-import RoundedTags from "./experience/rounded_tag";
 import SectionHeading from "./section_heading";
 
 export declare interface CurrentInterestProps {

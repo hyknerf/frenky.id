@@ -12,7 +12,7 @@ export declare interface TitleProp {
 
 const JobTitle = (props: TitleProp) => {
   return (
-    <h4 className="flex font-['paralucent'] text-2xl gap-x-2">
+    <h4 className="flex font-['paralucent'] text-xl lg:text-2xl gap-x-2">
       <span>{props.role}</span>
       <span className="text-sun-500">@</span>
       <a

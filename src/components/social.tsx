@@ -11,7 +11,7 @@ import { SocialLinks } from "../types";
 
 const SocialLinksIcon = (socialLinks: SocialLinks) => {
   return (
-    <section className="flex mt-12 text-4xl gap-x-2 text-sun-500">
+    <section className="flex mt-12 text-4xl gap-x-4 text-sun-500 before:bg-sun-500 before:w-[400px] before:h-1 before:mt-[18px]">
       <a
         href={socialLinks.github}
         target={"_blank"}

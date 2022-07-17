@@ -1,5 +1,5 @@
-import { Tab } from "@headlessui/react";
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import About from "../components/about";
 import Contact from "../components/contact";
 import Credit from "../components/credit";
@@ -7,9 +7,6 @@ import Experiences from "../components/experiences";
 import Hero from "../components/hero";
 import CurrentInterest from "../components/interest";
 import { SiteConfig } from "../types";
-import { Helmet } from "react-helmet";
-import { Script } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 
 const config: SiteConfig = {
   name: "Frenky Harry",
