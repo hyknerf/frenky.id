@@ -24,7 +24,7 @@ const Experiences = (props: ExperiencesProp) => {
         {(state) => (
           <div
             className={
-              "text-left font-mono px-4 py-2 hover:bg-midnight-700 hover:transition-all ease-in duration-300 border-l-2" +
+              "text-left font-aglet px-4 py-2 hover:bg-midnight-700 hover:transition-all ease-in duration-300 border-l-2" +
               " " +
               (state.selected
                 ? "bg-midnight-700  border-midnight-200"
@@ -49,19 +49,19 @@ const Experiences = (props: ExperiencesProp) => {
               url={item.website}
             ></Title>
           </h3>
-          <div className="font-mono">
+          <div className="font-aglet">
             <Duration
               start={item.duration.start}
               end={item.duration.end}
             ></Duration>
           </div>
-          <p className="max-w-2xl">
+          <p className="max-w-2xl mb-8 font-haas">
             {item.description}
           </p>
           <div className="flex flex-col mt-4 gap-y-4">
             {item.languages.length > 0 && (
               <div className="">
-                <p className="mb-2 font-mono text-sm">
+                <p className="mb-2 text-sm font-aglet">
                   <FontAwesomeIcon icon={faCode}></FontAwesomeIcon>
                   <span className="ml-2">Languages</span>
                 </p>
@@ -69,7 +69,7 @@ const Experiences = (props: ExperiencesProp) => {
               </div>
             )}
             <div className="">
-              <p className="mb-2 font-mono text-sm">
+              <p className="mb-2 text-sm font-aglet">
                 <FontAwesomeIcon icon={faMicrochip}></FontAwesomeIcon>
                 <span className="ml-2">Technologies</span>
               </p>
@@ -77,7 +77,7 @@ const Experiences = (props: ExperiencesProp) => {
             </div>
             {item.tools.length > 0 && (
               <div className="">
-                <p className="mb-2 font-mono text-sm">
+                <p className="mb-2 text-sm font-aglet">
                   <FontAwesomeIcon icon={faScrewdriverWrench}></FontAwesomeIcon>
                   <span className="ml-2">Tools</span>
                 </p>
@@ -94,7 +94,7 @@ const Experiences = (props: ExperiencesProp) => {
 
   return (
     <section className="min-h-full mb-20 2xl:mx-20">
-      <h2 className="text-3xl font-extrabold font-['paralucent'] before:content-['02.'] before:font-mono before:mr-2 text-gray-300 before:text-sun-500 before:text-2xl text-sun">
+      <h2 className="text-3xl font-extrabold font-['paralucent'] before:content-['02.'] before:font-aglet before:mr-2 text-gray-300 before:text-sun-500 before:text-2xl text-sun">
         I've Been Working With
       </h2>
       {/* <div className="flex flex-col gap-12 pt-4 pb-20 text-gray-300 first:-mt-4">

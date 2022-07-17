@@ -32,7 +32,7 @@ const config: SiteConfig = {
     {
       company: "GoPay",
       website: "https://gopay.co.id",
-      role: "Web Developer",
+      role: "Senior Backend Engineer",
       duration: {
         start: "February 2017",
         end: "Present",
@@ -52,12 +52,12 @@ const config: SiteConfig = {
     {
       company: "Gojek",
       website: "https://gojek.com",
-      role: "Web Developer",
+      role: "Backend Engineer",
       duration: {
         start: "Jan 2015",
         end: "Jan 2017",
       },
-      description: "Gojek",
+      description: "Working on various project within the payment system such as integrating with notable third-party such as Google, and to keep GoPay compliance with regulation by implementing QR Code Indonesian Standard. During the last 2 years, focus on GoBills - GoPay solution for bills payment.",
       languages: ["Java"],
       technologies: ["Node.js", "Docker", "Kubernetes"],
       tools: ["MySQL", "Git"],
