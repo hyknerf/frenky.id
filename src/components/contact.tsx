@@ -14,11 +14,11 @@ const Contact = () => {
 
       <div className="mx-auto mt-10 group">
         <a
-          className="p-4 border-2 rounded-lg group-hover:transition-all group-hover:border-4 border-sun-500 hover:cursor-pointer group-hover:bg-midnight-800"
+          className="p-4 transition-all ease-in border-2 rounded-lg eas group-hover:border-4 border-sun-500 hover:cursor-pointer group-hover:bg-midnight-800"
           href={"mailto:hello@frenky.id"}
         >
-          <span className="font-mono text-xl group-hover:transition-all text-sun-500 group-hover:font-bold ">
-            👋 Say Hello
+          <span className="font-mono text-xl transition-all ease-in text-sun-500 group-hover:font-bold">
+            Say Hello 👋
           </span>
         </a>
       </div>

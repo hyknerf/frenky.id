@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Credit = () => {
   return (
-    <section className="flex flex-col pt-20 pb-10 text-xs text-gray-300 gap-y-2">
+    <section className="flex flex-col pt-20 pb-10 text-xs text-midnight-500 gap-y-2">
       <p className="font-mono text-center">
         Designed and built by{" "}
         <a href="https://frenky.id" target={"_blank"}>
@@ -11,11 +11,11 @@ const Credit = () => {
       </p>
       <p className="font-mono text-center">
         <a href="https://www.gatsbyjs.com/" target={"_blank"}>
-          GatsbyJS
+          Gatsby
         </a>{" "}
         +{" "}
         <a href="https://tailwindcss.com/" target={"_blank"}>
-          TailwindCSS
+          Tailwind
         </a>
       </p>
     </section>
