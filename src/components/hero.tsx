@@ -12,14 +12,14 @@ export declare interface HeroProps {
 const Hero = (hero: HeroProps) => {
   return (
     <section className="flex-row min-h-screen py-2">
-      <div className="text-lg font-aglet text-sun-500">Hello, my name is</div>
-      <div className="mt-3 text-7xl font-bold font-['paralucent'] text-sun-500">
+      <div className="text-lg leading-loose font-aglet text-sun-500">Hello, my name is</div>
+      <div className="leading-snug text-7xl font-bold font-['paralucent'] text-sun-500">
         {hero.name}.
       </div>
-      <div className="mt-3 text-6xl font-medium font-['paralucent'] text-sun-500">
+      <div className="leading-snug text-6xl font-medium font-['paralucent'] text-sun-500">
         {hero.tagline}
       </div>
-      <p className="max-w-xl mt-10 leading-relaxed text-gray-300 text-md font-haas">
+      <p className="max-w-xl mt-10 leading-loose text-gray-300 text-md font-haas">
         {hero.description}
       </p>
       <SocialLinksIcon

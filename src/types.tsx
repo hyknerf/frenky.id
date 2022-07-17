@@ -1,12 +1,17 @@
+export declare interface DevStacks {
+  languages: Array<string>;
+  technologies: Array<string>;
+  tools: Array<string>;
+}
+
 export declare interface Experience {
   company: string;
   website: string;
   role: string;
   description: string;
   duration: WorkDuration;
-  languages: Array<string>;
-  technologies: Array<string>;
-  tools: Array<string>;
+  devStacks: DevStacks;
+  projects: Array<string>;
 }
 
 export declare interface WorkDuration {
