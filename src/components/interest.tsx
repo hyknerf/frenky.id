@@ -1,5 +1,5 @@
 import * as React from "react";
-import RoundedTags from "./tag";
+import RoundedTags from "./experience/stack";
 
 export declare interface CurrentInterestProps {
   interests: Array<string>;

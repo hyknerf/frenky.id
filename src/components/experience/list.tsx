@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Tab } from "@headlessui/react";
 import * as React from "react";
 import { Experience } from "../../types";
-import RoundedTags from "../tag";
+import RoundedTags from "./stack";
 import Duration from "./duration";
 import Title from "./title";
 
@@ -101,14 +101,14 @@ const Experiences = (props: ExperiencesProp) => {
         {experiences}
       </div> */}
 
-      <div className="flex gap-12 pt-4 pb-20 text-gray-300 first:-mt-4">
+      <div className="flex flex-row gap-12 pt-4 pb-20 text-gray-300 first:-mt-4">
         <Tab.Group
           vertical
           selectedIndex={selectedIndex}
           onChange={setSelectedIndex}
         >
-          <Tab.List className="flex flex-col">{experiencesTab}</Tab.List>
-          <Tab.Panels>{experiencesPanel}</Tab.Panels>
+          <Tab.List className="flex flex-col basis-1/5">{experiencesTab}</Tab.List>
+          <Tab.Panels className={"basis-4/5"}>{experiencesPanel}</Tab.Panels>
         </Tab.Group>
       </div>
     </section>

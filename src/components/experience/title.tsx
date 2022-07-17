@@ -1,5 +1,5 @@
 import * as React from "react";
-import RoundedTags from "../tag";
+import RoundedTags from "./stack";
 
 export declare interface Title {
   technologies: Array<string>;

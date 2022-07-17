@@ -27,6 +27,7 @@ const Hero = (hero: HeroProps) => {
         twitter={hero.social.twitter}
         linkedin={hero.social.linkedin}
         instagram={hero.social.instagram}
+        hashnode={hero.social.hashnode}
       ></SocialLinksIcon>
     </section>
   );

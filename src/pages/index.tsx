@@ -9,6 +9,7 @@ import CurrentInterest from "../components/interest";
 import { SiteConfig } from "../types";
 import { Helmet } from "react-helmet";
 import { Script } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 const config: SiteConfig = {
   name: "Frenky Harry",
@@ -21,6 +22,7 @@ const config: SiteConfig = {
     twitter: "https://twitter.com/hyknerf",
     linkedin: "https://linkedin.com/u/frenkyharry",
     instagram: "https://instagram.com/frenkyharry",
+    hashnode: "https://blog.frenky.id",
   },
   currentInterest: [
     "Web3 is one of recent phenomenon that caught my attention. It is stunning how fast things moving in blockchain world, adoption and technologies are one of many aspect that moving rapidly. Enthusiast claim that this is the future, but I've yet to be convinced by that. But learning something new will never hurt.",

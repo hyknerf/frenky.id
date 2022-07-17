@@ -19,6 +19,7 @@ export declare interface SocialLinks {
   linkedin?: string;
   instagram?: string;
   twitter?: string;
+  hashnode?: string;
 }
 
 export declare interface SiteConfig {
