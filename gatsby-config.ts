@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: "Frenky Harry",
-    siteUrl: "https://frenky.id",
+    siteUrl: "https://www.frenky.id",
     titleTemplate: "%s · Software Engineer",
     description: "I build software that matters.",
     url: "https://www.frenky.id",

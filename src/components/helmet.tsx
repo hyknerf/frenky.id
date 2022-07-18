@@ -51,7 +51,7 @@ const SEO = (props: HelmetProps) => {
   const seo = {
     title: props.title || defaultTitle,
     description: props.description || defaultDescription,
-    image: `${props.image || defaultImage}`,
+    image: `${siteUrl}${props.image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   };
 
