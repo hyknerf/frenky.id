@@ -62,7 +62,6 @@ const SEO = (props: HelmetProps) => {
       <base target="_blank" href="https://www.frenky.id/" />
 
       <meta name="description" content={seo.description} />
-      <meta name="og:image" content={seo.image} />
       <meta property="og:type" content="website" />
 
       {seo.url && <meta property="og:url" content={seo.url} />}
