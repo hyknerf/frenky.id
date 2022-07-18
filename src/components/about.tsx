@@ -8,12 +8,13 @@ const About = () => {
       <SectionHeading sectionNumber={1} text={"About Me"} />
       <div className="flex flex-col gap-10 mx-auto my-6 md:flex-row">
         <div className="md:basis-2/6 lg:basis-1/5">
-          <StaticImage
-            className="w-40 border-4 border-gray-300 rounded-full"
-            src={"../images/avatar.jpeg"}
-            alt="frenky"
-            width={400}
-          ></StaticImage>
+          <div className="w-40 mx-auto overflow-hidden rounded-full isolate ring-4 ring-gray-300">
+            <StaticImage
+              src={"../images/avatar.jpeg"}
+              alt="frenky"
+              width={400}
+            ></StaticImage>
+          </div>
         </div>
         <div className="md:basis-4/6 lg:basis-4/5">
           <p className="leading-loose text-gray-300 text-md font-haas">
