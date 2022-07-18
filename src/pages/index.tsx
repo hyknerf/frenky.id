@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
 import About from "../components/about";
 import Contact from "../components/contact";
 import Credit from "../components/credit";
@@ -7,6 +6,7 @@ import Experiences from "../components/experiences";
 import SEO from "../components/helmet";
 import Hero from "../components/hero";
 import CurrentInterest from "../components/interest";
+import svg from "../images/22.svg";
 import { SiteConfig } from "../types";
 
 const config: SiteConfig = {
@@ -14,7 +14,7 @@ const config: SiteConfig = {
   title: "Frenky Harry | Software Engineer",
   tagline: "I build software that matters.",
   description:
-    "Enthusiastic Software Engineer with 6+ years broad experience in Backend Development, Microservice Architecture, Event-Driven Development areas with willingness to master new technologies that are relevant to provide solution around Financial Technology.",
+    "I've always keen to learn one something new. During my last 7+ years on my professional journey, I've been learning a lot from the best. Currently working with GoPay on building the best solution for bill payments. Working with monolithic and microservices systems have shaped myself on keeping up with the current technologies available to provide relevant solutions needed.",
   socialLinks: {
     github: "https://github.com/hyknerf",
     twitter: "https://twitter.com/hyknerf",
@@ -36,18 +36,18 @@ const config: SiteConfig = {
         end: "Present",
       },
       description:
-        "Working on various project within the payment system such as integrating with notable third-party such as Google, and to keep GoPay compliance with regulation by implementing QR Code Indonesian Standard. During the last 2 years, focus on GoBills - GoPay solution for bills payment.",
+        "Involved with various projects mostly on integrating with third-parties. During the last 2 years, focus on GoBills - GoPay solution for bills payment.",
       devStacks: {
         languages: ["Java", "Go"],
         technologies: [
           "Envoy",
           "PostgreSQL",
           "Docker",
-          "Gitlab CI/CD",
           "Terraform",
           "mTLS",
+          "ElasticSearch",
         ],
-        tools: ["ElasticSearch", "Amazon Web Service", "Google Cloud Platform"],
+        tools: ["Gitlab CI/CD", "Amazon Web Service", "Google Cloud Platform"],
       },
       projects: [
         "Implementing QR Code Indonesian Standard that required by the Central Bank of Indonesia",
@@ -67,13 +67,15 @@ const config: SiteConfig = {
         end: "Jan 2017",
       },
       description:
-        "Working on various project within the payment system such as integrating with notable third-party such as Google, and to keep GoPay compliance with regulation by implementing QR Code Indonesian Standard. During the last 2 years, focus on GoBills - GoPay solution for bills payment.",
+        "I decided to join Gojek for the chance of learning from the best engineers across countries. I join the core team, and later on after the team disbanded for deprecation I join GoPay",
       devStacks: {
         languages: ["Java"],
-        technologies: ["Node.js", "Docker", "Kubernetes"],
-        tools: ["MySQL", "Git"],
+        technologies: ["Virtual Machine"],
+        tools: ["MySQL", "Jenkins"],
       },
-      projects: ["StanMarsh"],
+      projects: [
+        "Develop and maintain features on now-deprecated monolithic service on enabling GoPay for Drivers",
+      ],
     },
     {
       company: "Tokopedia",
@@ -122,6 +124,13 @@ const IndexPage = () => {
           <Experiences experiences={config.experiences}></Experiences>
           <CurrentInterest interests={config.currentInterest}></CurrentInterest>
           <Contact></Contact>
+          <div className="max-w-sm mx-auto md:max-w-lg">
+            <img
+              src={svg}
+              alt={"Man in a table with laptop illustration by Themeisle.com"}
+              title={"Man in a table with laptop illustration"}
+            ></img>
+          </div>
           <Credit></Credit>
         </div>
       </div>
