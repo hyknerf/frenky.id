@@ -26,6 +26,7 @@ const query = graphql`
         lastName
         gender
         username
+        fbAppId
       }
     }
   }
@@ -46,6 +47,7 @@ const SEO = (props: HelmetProps) => {
     lastName,
     gender,
     username,
+    fbAppId,
   } = site.siteMetadata;
 
   const seo = {
@@ -66,6 +68,12 @@ const SEO = (props: HelmetProps) => {
       {seo.url && <meta property="og:url" content={seo.url} />}
 
       {seo.image && <meta property="og:image" content={seo.image} />}
+
+      {seo.title && <meta property="og:title" content={seo.title} />}
+
+      {seo.description && <meta property="og:description" content={seo.description} />}
+
+      {fbAppId && <meta property="fb:app_id" content={fbAppId} />}
 
       {firstName && (
         <meta property="og:type:profile:first_name" content={firstName} />

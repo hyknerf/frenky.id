@@ -12,6 +12,7 @@ const config: GatsbyConfig = {
     lastName: "Harry",
     gender: "Male",
     username: "frenkyharry",
+    fbAppId: "380689977509012",
     twitterUsername: "@hyknerf",
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
