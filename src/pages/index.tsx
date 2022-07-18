@@ -38,7 +38,7 @@ const config: SiteConfig = {
       website: "https://gopay.co.id",
       role: "Senior Backend Engineer",
       duration: {
-        start: "February 2017",
+        start: "August 2017",
         end: "Present",
       },
       description:
@@ -69,8 +69,8 @@ const config: SiteConfig = {
       website: "https://gojek.com",
       role: "Backend Engineer",
       duration: {
-        start: "Jan 2015",
-        end: "Jan 2017",
+        start: "February 2017",
+        end: "August 2017",
       },
       description:
         "I decided to join Gojek for the chance of learning from the best engineers across countries. I join the core team, and later on after the team disbanded for deprecation I join GoPay",
