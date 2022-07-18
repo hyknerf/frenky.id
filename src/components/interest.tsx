@@ -6,9 +6,9 @@ export declare interface CurrentInterestProps {
 }
 
 const CurrentInterest = (interests: CurrentInterestProps) => {
-  const renderedInterests = interests.interests.map((item) => {
+  const renderedInterests = interests.interests.map((item, index) => {
     return (
-      <p className="my-6 leading-loose text-gray-300 text-md font-haas">
+      <p key={index} className="my-6 leading-loose text-gray-300 text-md font-haas">
         {item}
       </p>
     );

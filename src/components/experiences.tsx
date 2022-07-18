@@ -11,9 +11,9 @@ export declare interface ExperiencesProp {
 }
 
 const Experiences = (props: ExperiencesProp) => {
-  const experiencesTab = props.experiences.map((item) => {
+  const experiencesTab = props.experiences.map((expItem, expIdx) => {
     return (
-      <Tab>
+      <Tab key={expIdx}>
         {(state) => (
           <div
             className={
@@ -24,40 +24,45 @@ const Experiences = (props: ExperiencesProp) => {
                 : "bg-transparent border-midnight-800")
             }
           >
-            {item.company}
+            {expItem.company}
           </div>
         )}
       </Tab>
     );
   });
 
-  const experiencesPanel = props.experiences.map((item) => {
-    const projects = item.projects.map((project) => {
+  const experiencesPanel = props.experiences.map((expItem, expIndex) => {
+    const projects = expItem.projects.map((projectItem, projectIndex) => {
       return (
-        <li className="before:content-['▹'] before:absolute before:left-0 relative pl-8 mb-1 before:text-sun-500">
-          {project}
+        <li
+          key={projectIndex}
+          className="before:content-['▹'] before:absolute before:left-0 relative pl-8 mb-1 before:text-sun-500"
+        >
+          {projectItem}
         </li>
       );
     });
     return (
-      <Tab.Panel className={"flex flex-col gap-y-1"}>
+      <Tab.Panel className={"flex flex-col gap-y-1"} key={expIndex}>
         <Title
-          role={item.role}
-          company={item.company}
-          url={item.website}
+          role={expItem.role}
+          company={expItem.company}
+          url={expItem.website}
         ></Title>
         <Duration
-          start={item.duration.start}
-          end={item.duration.end}
+          start={expItem.duration.start}
+          end={expItem.duration.end}
         ></Duration>
         <p className="max-w-2xl my-4 leading-relaxed font-haas">
-          {item.description}
+          {expItem.description}
         </p>
-        <ul className="relative flex flex-col max-w-lg my-4 gap-y-2 font-haas">{projects}</ul>
+        <ul className="relative flex flex-col max-w-lg my-4 gap-y-2 font-haas">
+          {projects}
+        </ul>
         <Stacks
-          languages={item.devStacks.languages}
-          technologies={item.devStacks.technologies}
-          tools={item.devStacks.tools}
+          languages={expItem.devStacks.languages}
+          technologies={expItem.devStacks.technologies}
+          tools={expItem.devStacks.tools}
         ></Stacks>
       </Tab.Panel>
     );

@@ -13,13 +13,13 @@ const Hero = (hero: HeroProps) => {
   return (
     <section className="flex-row min-h-screen py-2">
       <div className="text-lg leading-loose font-aglet text-sun-500">Hello, my name is</div>
-      <div className="leading-snug text-7xl font-bold font-['paralucent'] text-sun-500">
+      <div className="leading-snug text-5xl md:text-6xl font-bold font-['paralucent'] text-sun-500 mt-10 md:mt-5 lg:text-7xl">
         {hero.name}.
       </div>
-      <div className="leading-snug text-6xl font-medium font-['paralucent'] text-sun-500">
+      <div className="leading-snug text-4xl md:text-5xl font-medium font-['paralucent'] text-sun-500 mt-5 lg:text-6xl">
         {hero.tagline}
       </div>
-      <p className="max-w-xl mt-10 leading-loose text-gray-300 text-md font-haas">
+      <p className="max-w-xl mt-16 leading-loose text-gray-300 text-md font-haas">
         {hero.description}
       </p>
       <SocialLinksIcon
