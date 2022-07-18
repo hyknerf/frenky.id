@@ -65,6 +65,8 @@ const SEO = (props: HelmetProps) => {
 
       {seo.url && <meta property="og:url" content={seo.url} />}
 
+      {seo.image && <meta property="og:image" content={seo.image} />}
+
       {firstName && (
         <meta property="og:type:profile:first_name" content={firstName} />
       )}
