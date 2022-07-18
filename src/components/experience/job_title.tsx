@@ -12,11 +12,11 @@ export declare interface TitleProp {
 
 const JobTitle = (props: TitleProp) => {
   return (
-    <h4 className="flex font-['paralucent'] text-xl lg:text-2xl gap-x-2">
+    <h4 className="flex text-xl font-archivo lg:text-2xl gap-x-2">
       <span>{props.role}</span>
       <span className="text-sun-500">@</span>
       <a
-        className="font-bold hover:underline hover:cursor-pointer text-sun-500"
+        className="font-semibold hover:underline hover:cursor-pointer text-sun-500"
         href={props.url}
         target={"_blank"}
       >

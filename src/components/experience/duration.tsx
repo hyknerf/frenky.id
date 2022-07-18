@@ -3,7 +3,7 @@ import { WorkDuration } from "../../types";
 
 const Duration = (props: WorkDuration) => {
   return (
-    <div className="font-aglet">
+    <div className="font-jetbrains">
       {props.start} — {props.end}
     </div>
   );

@@ -1,7 +1,6 @@
+import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import PropTypes from "prop-types";
-import { graphql, useStaticQuery } from "gatsby";
 
 import { useLocation } from "@reach/router";
 

@@ -12,7 +12,7 @@ export declare interface DevStackItemProps {
 const DevStackItem = (props: DevStackItemProps) => {
   return (
     <div className="">
-      <p className="mb-2 text-sm font-aglet">
+      <p className="mb-2 text-sm font-jetbrains">
         <FontAwesomeIcon icon={props.icon}></FontAwesomeIcon>
         <span className="ml-2">{props.title}</span>
       </p>

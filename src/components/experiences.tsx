@@ -17,7 +17,7 @@ const Experiences = (props: ExperiencesProp) => {
         {(state) => (
           <div
             className={
-              "text-left font-aglet px-4 py-2 hover:bg-midnight-700 hover:border-sun-500 hover:transition-all ease-in duration-300 border-b-2 lg:border-l-2 lg:border-b-0" +
+              "text-left font-jetbrains px-4 py-2 hover:bg-midnight-700 hover:border-sun-500 hover:transition-all ease-in duration-300 border-b-2 lg:border-l-2 lg:border-b-0" +
               " " +
               (state.selected
                 ? "bg-midnight-700  border-sun-500"
@@ -53,10 +53,10 @@ const Experiences = (props: ExperiencesProp) => {
           start={expItem.duration.start}
           end={expItem.duration.end}
         ></Duration>
-        <p className="max-w-2xl my-4 leading-relaxed font-haas">
+        <p className="max-w-2xl my-4 leading-relaxed font-inter">
           {expItem.description}
         </p>
-        <ul className="relative flex flex-col max-w-lg my-4 gap-y-2 font-haas">
+        <ul className="relative flex flex-col max-w-lg my-4 gap-y-2 font-inter">
           {projects}
         </ul>
         <Stacks
