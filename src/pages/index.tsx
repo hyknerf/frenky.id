@@ -4,6 +4,7 @@ import About from "../components/about";
 import Contact from "../components/contact";
 import Credit from "../components/credit";
 import Experiences from "../components/experiences";
+import SEO from "../components/helmet";
 import Hero from "../components/hero";
 import CurrentInterest from "../components/interest";
 import { SiteConfig } from "../types";
@@ -103,10 +104,8 @@ const config: SiteConfig = {
 // markup
 const IndexPage = () => {
   return (
-    <>
-      <Helmet>
-        <title>{config.title}</title>
-      </Helmet>
+    <main>
+      <SEO></SEO>
       <div className={"text-white bg-midnight-900"}>
         <div
           className={
@@ -126,7 +125,7 @@ const IndexPage = () => {
           <Credit></Credit>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 
