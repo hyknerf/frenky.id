@@ -57,7 +57,7 @@ const SEO = (props: HelmetProps) => {
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
-      <base target="_blank" href="https://frenky.id/" />
+      <base target="_blank" href="https://www.frenky.id/" />
 
       <meta name="description" content={seo.description} />
       <meta name="og:image" content={seo.image} />
