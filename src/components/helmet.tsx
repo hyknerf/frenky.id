@@ -65,6 +65,14 @@ const SEO = (props: HelmetProps) => {
 
       {seo.image && <meta property="og:image" content={seo.image} />}
 
+      {seo.image && <meta property="og:image:secure_url" content={seo.image} />}
+
+      {seo.title && <meta property="og:image:alt" content={seo.title} />}
+
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="627" />
+
       {seo.title && <meta property="og:title" content={seo.title} />}
 
       {seo.description && <meta property="og:description" content={seo.description} />}
