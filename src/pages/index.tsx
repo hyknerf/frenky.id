@@ -135,6 +135,8 @@ const IndexPage = () => {
               src={svg}
               alt={"Man in a table with laptop illustration by Themeisle.com"}
               title={"Man in a table with laptop illustration"}
+              width={900}
+              height={600}
             ></img>
           </div>
           <Credit></Credit>
