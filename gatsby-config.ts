@@ -7,7 +7,7 @@ const config: GatsbyConfig = {
     titleTemplate: "%s · Software Engineer",
     description: "I build software that matters.",
     url: "https://www.frenky.id",
-    image: "/images/meta_image.jpeg",
+    image: "/images/ogp.jpeg",
     firstName: "Frenky",
     lastName: "Harry",
     gender: "Male",
