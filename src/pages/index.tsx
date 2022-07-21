@@ -24,7 +24,7 @@ const config: SiteConfig = {
   socialLinks: {
     github: "https://github.com/hyknerf",
     twitter: "https://twitter.com/hyknerf",
-    linkedin: "https://linkedin.com/u/frenkyharry",
+    linkedin: "https://linkedin.com/in/frenkyharry",
     instagram: "https://instagram.com/frenkyharry",
     hashnode: "https://blog.frenky.id",
   },
@@ -39,7 +39,7 @@ const config: SiteConfig = {
       role: "Senior Backend Engineer",
       duration: {
         start: "August 2017",
-        end: "Present",
+        end: "July 2022",
       },
       description:
         "Involved with various projects mostly on integrating with third-parties. During the last 2 years, focus on GoBills - GoPay solution for bills payment.",
