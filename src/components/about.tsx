@@ -11,9 +11,11 @@ const About = () => {
           <div className="w-auto mx-auto">
             <StaticImage
               src={"../images/avatar.png"}
-              alt="frenky"
+              alt="Frenky Harry by Niko Wiratma"
+              title="Frenky Harry by Niko Wiratma"
               width={512}
             ></StaticImage>
+            <p className="text-xs text-center text-gray-300">Illustration by <a className="font-bold hover:underline hover:text-sun-500" href={"https://www.instagram.com/niko.wiratma/"} target={"_blank"}>Niko Wiratma</a></p>
           </div>
         </div>
         <div className="flex flex-col md:basis-4/6 lg:basis-4/5 gap-y-6">
