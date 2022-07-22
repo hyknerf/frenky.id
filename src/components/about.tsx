@@ -6,13 +6,13 @@ const About = () => {
   return (
     <section className="min-h-full pb-32 2xl:px-20">
       <SectionHeading sectionNumber={1} text={"About Me"} />
-      <div className="flex flex-col gap-10 mx-auto my-6 md:flex-row">
-        <div className="md:basis-2/6 lg:basis-1/5">
-          <div className="w-40 m-4 mx-auto overflow-hidden rounded-full isolate ring-4 ring-gray-300">
+      <div className="flex flex-col gap-10 mx-auto my-6 md:flex-row md:justify-start">
+        <div className="md:basis-2/6 lg:basis-2/5">
+          <div className="w-auto mx-auto">
             <StaticImage
-              src={"../images/avatar.jpeg"}
+              src={"../images/avatar.png"}
               alt="frenky"
-              width={400}
+              width={512}
             ></StaticImage>
           </div>
         </div>
