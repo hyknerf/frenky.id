@@ -22,8 +22,8 @@ const config: SiteConfig = {
   description:
     "I've always keen to learn one something new. During my last 7+ years on my professional journey, I've been learning a lot from the best. Currently working with GoPay on building the best solution for bill payments. Working with monolithic and microservices systems have shaped myself on keeping up with the current technologies available to provide relevant solutions needed.",
   socialLinks: {
-    github: "https://github.com/hyknerf",
-    twitter: "https://twitter.com/hyknerf",
+    github: "https://github.com/syknerf",
+    twitter: "https://twitter.com/syknerf",
     linkedin: "https://linkedin.com/in/frenkyharry",
     instagram: "https://instagram.com/frenkyharry",
     hashnode: "https://blog.frenky.id",
