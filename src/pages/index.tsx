@@ -20,7 +20,7 @@ const config: SiteConfig = {
   title: "Frenky Harry | Software Engineer",
   tagline: "I build software that matters.",
   description:
-    "I've always keen to learn one something new. During my last 7+ years on my professional journey, I've been learning a lot from the best. Currently working with GoPay on building the best solution for bill payments. Working with monolithic and microservices systems have shaped myself on keeping up with the current technologies available to provide relevant solutions needed.",
+    "I've always keen to learn one something new. During my last 7+ years on my professional journey, I've been learning a lot from the best. Currently working with Pintu on building the #1 cryptocurrency bank for everyone. Working with monolithic and microservices systems have shaped myself on keeping up with the current technologies available to provide relevant solutions needed.",
   socialLinks: {
     github: "https://github.com/syknerf",
     twitter: "https://twitter.com/syknerf",
@@ -33,6 +33,35 @@ const config: SiteConfig = {
     "Other things that currently I like to do is learning the fundamentals. I got my bachelor degree in Information Technolgy, so I don't have that deep understanding of computers compared to others from Computer Science school. It's fascinating to learn what's behind the technologies that I use on daily basis professionally.",
   ],
   experiences: [
+    {
+      company: "Pintu",
+      website: "https://pintu.co.id",
+      role: "Senior Software Engineer",
+      duration: {
+        start: "August 2022",
+        end: "Present",
+      },
+      description:
+          "We are building the #1 cryptocurrency bank for everyone to accelerate the transition to an open financial system",
+      devStacks: {
+        languages: ["Go", "NodeJS", "NestJS"],
+        technologies: [
+          "Redis",
+          "PostgreSQL",
+          "Protocol Buffer",
+          "gRPC",
+        ],
+        tools: [
+          "Github Workflow",
+          "Jira",
+          "Notion",
+        ],
+      },
+      projects: [
+        "Building internal tools to support day-to-day operation needs",
+        "Migrate some of internal components from NodeJS/NestJS to Go"
+      ],
+    },
     {
       company: "GoPay",
       website: "https://gopay.co.id",
