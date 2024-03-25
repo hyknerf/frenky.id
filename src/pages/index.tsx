@@ -20,7 +20,7 @@ const config: SiteConfig = {
   title: "Frenky Harry | Software Engineer",
   tagline: "I build software that matters.",
   description:
-    "I've always keen to learn one something new. During my last 7+ years on my professional journey, I've been learning a lot from the best. Currently working with Pintu on building the #1 cryptocurrency bank for everyone. Working with monolithic and microservices systems have shaped myself on keeping up with the current technologies available to provide relevant solutions needed.",
+    "Seasoned Software Engineer with over 9 years of experience, spanning from 2015 to the present, specializing in Ecommerce, Financial Technology, and Crypto Exchanges. Recognized for expertise in utilizing cutting-edge technologies to develop robust solutions and optimize business processes. Proficient in architecting scalable microservices architectures and implementing Agile Software Development Life Cycle (SDLC) methodologies. A collaborative team player with a passion for staying updated with the latest industry trends and technologies. Excels in effectively communicating technical concepts to diverse stakeholders, driving project success and achieving organizational goals.",
   socialLinks: {
     github: "https://github.com/syknerf",
     twitter: "https://twitter.com/syknerf",
@@ -36,38 +36,31 @@ const config: SiteConfig = {
     {
       company: "Pintu",
       website: "https://pintu.co.id",
-      role: "Senior Software Engineer",
+      role: "Senior Software Developer Engineer",
       duration: {
         start: "August 2022",
-        end: "Present",
+        end: "April 2024",
       },
       description:
-          "We are building the #1 cryptocurrency bank for everyone to accelerate the transition to an open financial system",
+        "We are building the #1 cryptocurrency bank for everyone to accelerate the transition to an open financial system",
       devStacks: {
         languages: ["Go", "NodeJS", "NestJS"],
-        technologies: [
-          "Redis",
-          "PostgreSQL",
-          "Protocol Buffer",
-          "gRPC",
-        ],
-        tools: [
-          "Github Workflow",
-          "Jira",
-          "Notion",
-        ],
+        technologies: ["Redis", "PostgreSQL", "Protocol Buffer", "gRPC"],
+        tools: ["Github Workflow", "Jira", "Notion"],
       },
       projects: [
-        "Building internal tools to support day-to-day operation needs",
-        "Migrate some of internal components from NodeJS/NestJS to Go"
+        "Maintain and enhance third-party exchange report on internal tools dashboard, ensuring accuracy and timeliness of data.",
+        "Assist in planning, kickoff, design and development phases of internal exchange system, contributing insights and expertise to ensure effective implementation.",
+        "Troubleshoot technical issues related to exchange systems, providing timely resolutions to minimize disruptions.",
+        "Communicate effectively with cross-functional teams to understand requirements and deliver solutions that meet business needs.",
       ],
     },
     {
       company: "GoPay",
       website: "https://gopay.co.id",
-      role: "Senior Backend Engineer",
+      role: "Senior Product Engineer",
       duration: {
-        start: "August 2017",
+        start: "February 2017",
         end: "July 2022",
       },
       description:
@@ -91,31 +84,12 @@ const config: SiteConfig = {
         ],
       },
       projects: [
-        "Implementing QR Code Indonesian Standard that required by the Central Bank of Indonesia",
-        "Integrate with Google for GoPay payment in Google App Store",
-        "Maintaining and buiding new feature for GoBills",
-        "Designing and building Partner Service, third-party API for GoBills",
-        "Improving user experience for GoBills Autopayment",
-        "Migrating GoBills services and components from Amazon Web Service to Google Cloud Platform",
-      ],
-    },
-    {
-      company: "Gojek",
-      website: "https://gojek.com",
-      role: "Backend Engineer",
-      duration: {
-        start: "February 2017",
-        end: "August 2017",
-      },
-      description:
-        "I decided to join Gojek for the chance of learning from the best engineers across countries. I join the core team, and later on after the team disbanded for deprecation I join GoPay",
-      devStacks: {
-        languages: ["Java"],
-        technologies: ["Virtual Machine"],
-        tools: ["MySQL", "Jenkins"],
-      },
-      projects: [
-        "Develop and maintain features on now-deprecated monolithic service on enabling GoPay for Drivers",
+        "Colaborate in the development of Project Ubiquity, aimed at extending GoPay's reach more users, resulting in a significant increase in user acquisition and transaction volume.",
+        "Implemented GoPay payment integration on the Google Play platform, enhancing the accessibility of GoPay services to a broader user base and facilitating seamless transactions within the Android ecosystem.",
+        "Orchestrated the migration from proprietary QR codes to standardized QRIS (Quick Response Code Indonesian Standard) compliant codes in compliance with regulatory standards, ensuring interoperability and security in payment transactions.",
+        "Managed the integration with third-party aggregators for various services including bill payments, phone credit purchases, and entertainment subscriptions, optimizing user experience and expanding GoPay's service offerings.",
+        "Collaborated with cross-functional teams including product managers, designers, and QA engineers to ensure the timely delivery of high-quality software solutions meeting business requirements and customer needs.",
+        "Conducted code reviews, implemented best practices, and maintained documentation to ensure code quality, scalability, and maintainability of GoPay's software systems.",
       ],
     },
     {
@@ -134,11 +108,10 @@ const config: SiteConfig = {
         tools: ["Git", "Jira", "Jenkins"],
       },
       projects: [
-        "Building first-ever fraud prevention system in the company",
-        "Developing pilot project to migrate from monolithic service into microservice using Go",
-        "Performing peer code review before production deployment",
-        "Communicate team bandwidth with Project Owner for project planning",
-        "Contributing in candidate interviews and new team members onboarding",
+        "Spearheaded feature maintenance and bug resolution efforts, ensuring optimal performance and user satisfaction on the e-commerce platform.",
+        "Collaborated with designers, project managers, and tech leads to overhaul the login with experience, resulting in a lot of metrics that used for improvement in the future.",
+        "Developed and optimized APIs tailored for mobile applications.",
+        "Played a pivotal role in initiating and executing the codebase migration from Perl to Go, enhancing code maintainability and scalability while minimizing downtime and technical debt.",
       ],
     },
   ],
@@ -149,10 +122,10 @@ const IndexPage = () => {
   return (
     <main>
       <SEO></SEO>
-      <div className={"text-white bg-midnight-900"}>
+      <div className={"bg-midnight-900 text-white"}>
         <div
           className={
-            "container px-10 mx-auto md:pt-52 pt-16 2xl:px-64 xl:px-40 md:px-20 sm:px-14"
+            "container mx-auto px-10 pt-16 sm:px-14 md:px-20 md:pt-52 xl:px-40 2xl:px-64"
           }
         >
           <Hero
@@ -165,7 +138,7 @@ const IndexPage = () => {
           <Experiences experiences={config.experiences}></Experiences>
           <CurrentInterest interests={config.currentInterest}></CurrentInterest>
           <Contact></Contact>
-          <div className="max-w-sm mx-auto md:max-w-lg">
+          <div className="mx-auto max-w-sm md:max-w-lg">
             <img
               src={svg}
               alt={"Man in a table with laptop illustration by Themeisle.com"}
