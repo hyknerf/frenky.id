@@ -76,7 +76,9 @@ const SEO = (props: HelmetProps) => {
 
       {seo.title && <meta property="og:title" content={seo.title} />}
 
-      {seo.description && <meta property="og:description" content={seo.description} />}
+      {seo.description && (
+        <meta property="og:description" content={seo.description} />
+      )}
 
       {fbAppId && <meta property="fb:app_id" content={fbAppId} />}
 
@@ -107,6 +109,8 @@ const SEO = (props: HelmetProps) => {
       )}
 
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+
+      <link rel="me" href="https://techhub.social/@hyknerf" />
     </Helmet>
   );
 };

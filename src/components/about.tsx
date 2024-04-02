@@ -18,7 +18,7 @@ const About = () => {
             <p className="text-center text-xs text-gray-300">
               Illustration by{" "}
               <a
-                className="hover:text-sun-500 font-bold hover:underline"
+                className="font-bold hover:text-sun-500 hover:underline"
                 href={"https://www.instagram.com/niko.wiratma/"}
                 target={"_blank"}
               >
